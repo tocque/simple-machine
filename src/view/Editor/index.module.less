@@ -1,0 +1,23 @@
+.editor-panel {
+    margin: 3px;
+    padding: 5px;
+    background-color: #F8F8F8;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.editor {
+    :global {
+        .cm-content {
+            font-family: var(--code-font);
+            font-size: 14px;
+        }
+        .cm-gutterElement {
+            font-family: var(--code-font);
+        }
+    }
+}

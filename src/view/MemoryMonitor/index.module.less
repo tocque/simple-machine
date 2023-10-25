@@ -1,0 +1,49 @@
+.memory-monitor {
+    margin: 3px;
+    padding: 5px;
+    background-color: #F8F8F8;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.memory-table {
+    margin: auto;
+}
+
+.memory-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.memory-block {
+
+    font-family: var(--code-font);
+    width: 60px;
+    text-align: center;
+    border: rgba(0, 0, 0, 0.1) 1px solid;
+
+    .id {
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .write {
+        background-color: rgba(var(--semi-amber-3), 1);
+    }
+    .read {
+        background-color: rgba(var(--semi-teal-3), 1);
+    }
+}
+
+.memory-view {
+    :global {
+        pre {
+            margin: 4px;
+            font-family: var(--code-font);
+        }
+    }
+}
